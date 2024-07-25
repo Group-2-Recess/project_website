@@ -1,19 +1,16 @@
-/* src/App.css */
-
 :root {
-  --primary-color: #007bff; /* Blue */
-  --secondary-color: #6c757d; /* Gray */
-  --background-color: #f8f9fa; /* Light Gray */
-  --text-color: #212529; /* Dark Text */
-  --header-bg-color: #343a40; /* Dark Gray */
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --header-bg-color: #343a40;
 }
 
 .App {
   font-family: Arial, sans-serif;
   padding: 20px;
   max-width: 1200px;
-  margin: 0 auto;
-  justify-content: center;
+  margin: 0 auto; /* Center the App container horizontally */
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -43,6 +40,7 @@ section {
 h1, h2 {
   color: var(--primary-color);
   margin: 0;
+  text-align: center; /* Center align all headings */
 }
 
 ul {
@@ -67,6 +65,23 @@ footer {
   border-radius: 8px;
 }
 
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center items vertically if needed */
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px; /* Adjust to control size */
+  height: 200px; /* Fixed height for uniform size */
+  object-fit: cover; /* Maintain aspect ratio and cover area */
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
   .App {
     padding: 10px;
@@ -78,5 +93,10 @@ footer {
 
   section {
     padding: 15px;
+  }
+
+  .gallery img {
+    max-width: 100%;
+    height: auto;
   }
 }

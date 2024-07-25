@@ -1,5 +1,9 @@
+// src/App.js
 import React from 'react';
 import './App.css';
+import img1 from '/images/img_1.jpg'; // Adjust paths as needed
+import img2 from '/images/img_2.jpg';
+import img3 from '/images/img_3.jpg';
 
 function App() {
   return (
@@ -43,6 +47,14 @@ function App() {
             <li>Improved Monitoring: Caregivers and healthcare providers will have better tools to support patients.</li>
             <li>Cost Savings: Lower healthcare costs due to fewer hospital visits and complications.</li>
           </ul>
+        </section>
+        <section className="image-gallery">
+          <h2>Our Team in Action</h2>
+          <div className="gallery">
+            <img src={img1} alt="Team meeting with health workers" />
+            <img src={img2} alt="Team discussion with healthcare professionals" />
+            <img src={img3} alt="Team presenting to health workers" />
+          </div>
         </section>
         <section>
           <h2>Team Members</h2>
