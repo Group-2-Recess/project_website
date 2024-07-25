@@ -60,7 +60,7 @@ function App() {
           <h2>Team Members</h2>
           <ul>
             <li>Kato Kibirige Agathone - 2300725696</li>
-            <li>Nanaozi Rachael - 2300715155</li>
+            <li>Nannozi Rachael - 2300715155</li>
             <li>Bainomugisha Derrick - 2300700350</li>
             <li>Kigongo Bazira Fred - 2300709771</li>
             <li>Ssozi Brandon - 2300717784</li>
